@@ -4,24 +4,7 @@ import './Details.scss';
 
 class Details extends Component {
 
-    state = {
-        loading: true
-      };
-
-      componentWillReceiveProps(nextProps) {
-        if (nextProps.name !== this.props.name) {
-         this.setState({loading: false});
-        }}
-
   render() {
-
-    if(this.state.loading) { 
-        return(
-            <div>
-                Loading
-            </div>
-        )
-    }
 
     if (this.props.houseSelected){
 
