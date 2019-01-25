@@ -91,7 +91,11 @@ class ListAndDetails extends Component {
       const swornMembers = e.target.dataset.swornmembers.split(",");
       for (let cadet = 0; cadet < swornMembers.length; cadet++){
         const swornMember = await fetch(swornMembers[cadet]).then(response => response.json());
-        swornMembersArr.push(swornMember.name);
+        if (swornMember.name !== ""){
+          swornMembersArr.push(swornMember.name);
+        }else if(swornMember.aliases !== ""){
+          swornMembersArr.push(swornMember.aliases[0]);
+        }
       }
       this.setState({swornMembers: swornMembersArr.toString()});
     }else{
