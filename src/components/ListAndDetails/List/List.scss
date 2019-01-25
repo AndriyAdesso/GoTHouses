@@ -1,0 +1,16 @@
+ul {
+    list-style: none;
+    padding: 10;
+    width: 90%;
+    margin: auto;
+    float: left;
+}
+ul li {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    cursor: pointer;
+   /* border-bottom: 1px solid #777;*/
+   &:hover{
+    color: red;
+   }
+}
