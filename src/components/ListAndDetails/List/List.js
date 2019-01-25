@@ -39,7 +39,7 @@ class List extends Component {
                 data-overlord={gotHouse.overlord}
                 data-founded={gotHouse.founded}
                 data-founder={gotHouse.founder}
-                data-diedout={gotHouse.diedout}
+                data-diedout={gotHouse.diedOut}
                 data-ancestralweapons={gotHouse.ancestralWeapons}
                 data-cadetbranches={gotHouse.cadetBranches}
                 data-swornmembers={gotHouse.swornMembers}
